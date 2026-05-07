@@ -426,6 +426,151 @@ section{
   grid-template-columns:1fr;
 }
 }
+ /* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 1024px){
+
+    .hero{
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
+    }
+
+    .hero-img{
+        margin: auto;
+    }
+
+    .hero-content{
+        align-items: center;
+    }
+
+    .hero-buttons{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .about-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .contact-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   MOBILE PHONES
+========================= */
+
+@media (max-width: 768px){
+
+    nav{
+        padding: 20px;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .hero{
+        padding-top: 120px;
+    }
+
+    .hero-title{
+        font-size: 4rem;
+        line-height: 1;
+    }
+
+    .hero-sub{
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .hero-img{
+        width: 280px;
+        height: 360px;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .section-title{
+        font-size: 2.2rem;
+    }
+
+    .projects-grid{
+        gap: 30px;
+    }
+
+    .project-card img{
+        height: 240px;
+        object-fit: cover;
+    }
+
+    .skills-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .btn{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-buttons{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-card,
+    .skill-card,
+    .project-card{
+        padding: 20px;
+    }
+
+    footer{
+        text-align: center;
+    }
+}
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 480px){
+
+    .hero-title{
+        font-size: 3rem;
+    }
+
+    .hero-sub{
+        font-size: 0.95rem;
+    }
+
+    .section-title{
+        font-size: 1.8rem;
+    }
+
+    .hero-img{
+        width: 240px;
+        height: 320px;
+    }
+
+    .logo{
+        font-size: 1.2rem;
+    }
+
+}
 </style>
 </head>
 <body>
